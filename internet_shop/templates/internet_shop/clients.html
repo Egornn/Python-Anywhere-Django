@@ -1,8 +1,8 @@
 {% extends 'myapp/base.html' %}
 
 {% block content %}
-    <p>Список клиентов: </p>
+    <p>clients list: </p>
     {% for client in clients %}
-        <p><a href="{% url 'get_client_goods' client.id %}">Имя клиента: {{ client.name }}</a></p>
+        <p><a href="{% url 'get_client_goods' client.id %}">Client: {{ client.name }}</a></p>
     {% endfor %}
 {% endblock %}
